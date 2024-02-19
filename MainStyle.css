@@ -1,38 +1,60 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+#mainTitle {
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+body {
     background-color: ghostwhite;
     margin: 0;
     padding: 0;
 }
 
-#banner{
+#banner {
     background-color: #6E2594;
     padding: 10px;
+    display: flex; /* Allows logo to appear on same line as banner */
+    align-items: center; 
 }
 
-a, ul{
+a, ul {
     text-decoration: none;
     color: #3F84EF;
 }
 
 .bannerList:hover {
-	background-color: rgb(138, 138, 141);
+    background-color: rgb(138, 138, 141);
 }
 
 ul {
-    text-align: center;
     font-size: 25px;
     list-style-type: none;
     z-index: 3;
+    text-align: center;
 }
 
-.bannerList{
+.bannerList {
     padding: 10px;
     margin: 20px;
     display: inline;
     border-radius: 15px;
     background-color: ghostwhite;
+}
+
+footer {
+    margin: 20px;
+}
+
+.center {
+    display: block;
+    text-align: center;
 }
