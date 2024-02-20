@@ -10,7 +10,7 @@
 #mainLogo {
     width: 100px;
     height: 100px;
-    display: inline-block;
+    display: inline;
 }
 
 body {
@@ -40,6 +40,7 @@ ul {
     list-style-type: none;
     z-index: 3;
     text-align: center;
+    transform: translate(100%,0%);
 }
 
 .bannerList {
