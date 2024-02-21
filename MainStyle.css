@@ -10,7 +10,8 @@
 #mainLogo {
     width: 100px;
     height: 100px;
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
 }
 
 body {
@@ -39,7 +40,8 @@ ul {
     font-size: 25px;
     list-style-type: none;
     z-index: 3;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     transform: translate(100%,0%);
 }
 
@@ -51,7 +53,14 @@ ul {
     background-color: ghostwhite;
 }
 
+#description {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
 footer {
+    background-color: #6E2594;
     margin: 20px;
 }
 
