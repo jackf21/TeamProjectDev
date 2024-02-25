@@ -34,14 +34,14 @@ a, ul {
     background-color: rgb(138, 138, 141);
 }
 
-ul {
+.bannerList {
     font-size: 25px;
     list-style-type: none;
     z-index: 3;
     transform: translate(100%,0);
 }
 
-.bannerList {
+.bannerListItem {
     padding: 10px;
     margin: 20px;
     display: inline;
@@ -57,7 +57,15 @@ ul {
 
 footer {
     background-color: #6E2594;
-    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+}
+
+.footerList {
+    background-color: none;
+    color: ghostwhite;
 }
 
 .center {
