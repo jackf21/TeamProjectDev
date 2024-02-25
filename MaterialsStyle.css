@@ -31,11 +31,11 @@ a, ul {
     color: #3F84EF;
 }
 
-.bannerList:hover {
+.bannerItem:hover {
     background-color: rgb(138, 138, 141);
 }
 
-ul {
+.bannerList {
     font-size: 25px;
     list-style-type: none;
     z-index: 3;
@@ -43,7 +43,7 @@ ul {
     transform: translate(100%,0%);
 }
 
-.bannerList {
+.bannerItem {
     padding: 10px;
     margin: 20px;
     display: inline;
@@ -60,6 +60,30 @@ footer {
     text-align: center;
 }
 
-.materialsLists {
+#materials {
     margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+.materialsLists {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.materialsItem {
+    margin-top: 10px;
+    color:black;
+    font-size: 20px;
+}
+
+.list {
+    border-style:solid;
+    padding: 20px;
+    background-color: #3f84e5;
 }
