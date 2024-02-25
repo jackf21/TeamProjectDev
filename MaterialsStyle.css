@@ -64,7 +64,7 @@ footer {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -75,6 +75,8 @@ h1 {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    width: 40vw;
+    height: 40vh;
 }
 
 .materialsItem {
@@ -87,4 +89,5 @@ h1 {
     border-style:solid;
     padding: 20px;
     background-color: #3f84e5;
+    margin-bottom: 7%;
 }
