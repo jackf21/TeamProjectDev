@@ -25,18 +25,17 @@ body {
     align-items: center;
 }
 
-a, ul {
+a, .bannerList {
     text-decoration: none;
     color: #3F84EF;
 }
 
-.bannerList:hover {
+.bannerListItem:hover {
     background-color: rgb(138, 138, 141);
 }
 
 .bannerList {
     font-size: 25px;
-    list-style-type: none;
     z-index: 3;
     transform: translate(100%,0);
 }
@@ -49,23 +48,31 @@ a, ul {
     background-color: ghostwhite;
 }
 
-#description {
+#mainContentContainer {
+    width: 70%;
+    display: flex;
+    flex-flow: column wrap; 
+}
+
+.content {
+    margin: 10px;
     font-size: 20px;
     text-align: center;
-    margin: 20px;
+    border: 2px solid #6E2594;
 }
+
 
 footer {
     background-color: #6E2594;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-direction: row;
 }
 
 .footerList {
     background-color: none;
     color: ghostwhite;
+    list-style: none;
 }
 
 .center {
