@@ -10,7 +10,6 @@
 #mainLogo {
     width: 100px;
     height: 100px;
-    display: inline;
 }
 
 body {
@@ -23,7 +22,8 @@ body {
     background-color: #6E2594;
     padding: 10px;
     display: flex; /* Allows logo to appear on same line as banner */
-    align-items: center; 
+    align-items: center;
+    justify-content: space-between;
 }
 
 a, ul {
@@ -31,31 +31,79 @@ a, ul {
     color: #3F84EF;
 }
 
-.bannerList:hover {
+ul {
+    padding-left: 0;
+}
+
+.bannerListItem:hover {
     background-color: rgb(138, 138, 141);
 }
-
-ul {
+ 
+.pageLink:hover {
+    text-decoration: underline;
+}
+ 
+.bannerList {
     font-size: 25px;
-    list-style-type: none;
     z-index: 3;
-    text-align: center;
-    transform: translate(100%,0%);
 }
 
-.bannerList {
+.bannerListItem {
     padding: 10px;
-    margin: 20px;
+    margin: 40px;
     display: inline;
     border-radius: 15px;
     background-color: ghostwhite;
+    color: black;
 }
 
 footer {
-    margin: 20px;
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+.footerList {
+    background-color: none;
+    color: ghostwhite;
+    list-style: none;
 }
 
 .center {
     display: block;
     text-align: center;
+}
+
+#materials {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+.materialsLists {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 40vw;
+    height: 40vh;
+}
+
+.materialsItem {
+    margin-top: 10px;
+    color:black;
+    font-size: 20px;
+}
+
+.list {
+    border-style:solid;
+    padding: 20px;
+    background-color: #9E55c4;
+    margin-bottom: 7%;
 }
