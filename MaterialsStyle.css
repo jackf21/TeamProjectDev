@@ -1,21 +1,39 @@
+@font-face {
+    font-family: Nexa-Light;
+    src: url(Nexa-ExtraLight.ttf);
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#mainTitle {
-    font-size: 100px;
-    margin-top: 20px;
-}
-
-#mainLogo {
-    width: 100px;
-    height: 100px;
+    font-family: Nexa-Light;
 }
 
 body {
     background-color: ghostwhite;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3F84EF;
+}
+
+#mainTitle {
+    display: flex;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    /*font-family: Nexa-Heavy;*/
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
 }
 
 #banner {
@@ -26,23 +44,14 @@ body {
     justify-content: space-between;
 }
 
-a, ul {
-    text-decoration: none;
-    color: #3F84EF;
-}
-
-ul {
-    padding-left: 0;
-}
-
 .bannerListItem:hover {
     background-color: rgb(138, 138, 141);
 }
- 
+
 .pageLink:hover {
     text-decoration: underline;
 }
- 
+
 .bannerList {
     font-size: 25px;
     z-index: 3;
@@ -57,6 +66,18 @@ ul {
     color: black;
 }
 
+#logSignButton {
+    margin: 0;
+    color: black;
+}
+
+.content {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #6E2594;
+}
+
 footer {
     background-color: #6E2594;
     padding: 10px;
@@ -64,16 +85,11 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
- 
+
 .footerList {
     background-color: none;
     color: ghostwhite;
     list-style: none;
-}
-
-.center {
-    display: block;
-    text-align: center;
 }
 
 #materials {
