@@ -9,25 +9,69 @@
 <body>
     <header id="banner">
         <img src="logo.png" alt="MyStudy Logo" id="mainLogo"/> 
-        <ul>
-            <a href=""><li class="bannerList"><strong>Home</strong></li></a> 
-            <a href=""><li class="bannerList"><strong>Study Advice</strong></li></a> 
-            <a href=""><li class="bannerList"><strong>Materials</strong></li></a> 
+        <ul class="bannerList">
+            <a href=""><li class="bannerListItem"><strong>Home</strong></li></a> 
+            <a href=""><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href=""><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
+        <div>
+            <button class="bannerListItem" id="logSignButton">Login / Signup</button>
+        </div>
     </header>
 
-    <h id=mainTitle class="center">MyStudy</h>
+    <h id=mainTitle>MyStudy</h>
 
-    <p id="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div id="contentContainer">
+        <div id="mainContentContainer">
+            <p class="content">
+                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+    
+            <p class="content">
+                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    
+        <p class="content" id="rightContent">
+            <strong id="rightContentTitle">Title</strong>
+
+            <br>
+
+            3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            <br>
+
+            <input type="radio" name="contentScroll" value="1">
+            <input type="radio" name="contentScroll" value="2">
+            <input type="radio" name="contentScroll" value="3">
+            <input type="radio" name="contentScroll" value="4">
+        </p>
+    </div>
 
     <footer>
-        <p>Text 1</p>
-        <p>Text 2</p>
+        <ul class="footerList" id="footerList1">
+            <li><strong>Developed by:</strong></li>
+            <li>Noah, Jack,</li>
+            <li>Hayden, Jackson,</li>
+            <li>Aron, Reyan</li>
+        </ul>
+        
+        <ul class="footerList" id="footerList2">
+            <li>Developed as a Team Project for Manchester Metropolitan University</li>
+            <li>Consider donating to our page <a href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC" class="pageLink">here.</a></li>
+            <br />
+            <li>Project Page: <a href="https://github.com/jackf21/TeamProjectDev" class="pageLink">github.com/jackf21/TeamProjectDev</a></li>
+        </ul>
+        <div></div>
     </footer>
 </body>
 </html>
