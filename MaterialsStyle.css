@@ -66,6 +66,11 @@ a {
     color: black;
 }
 
+#logSignButton {
+    margin: 0;
+    color: black;
+}
+
 .content {
     margin: 10px;
     font-size: 20px;
@@ -85,11 +90,6 @@ footer {
     background-color: none;
     color: ghostwhite;
     list-style: none;
-}
-
-.center {
-    display: block;
-    text-align: center;
 }
 
 #materials {
