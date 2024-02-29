@@ -59,7 +59,7 @@ a {
 
 .bannerListItem {
     padding: 10px;
-    margin: 40px;
+    margin: 40px; /* ISSUE: makes the buttons have hyperlink clickables that are too large for the button itself */
     display: inline;
     border-radius: 15px;
     background-color: ghostwhite;
@@ -105,10 +105,4 @@ footer {
     background-color: none;
     color: ghostwhite;
     list-style: none;
-}
-
-.center {
-    display: block;
-    text-align: center;
-    justify-content: center;
 }
