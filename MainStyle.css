@@ -1,16 +1,10 @@
+@font-face {
+    font-family: Nexa-Light;
+    src: url(Nexa-ExtraLight.ttf);
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#mainTitle {
-    font-size: 100px;
-    margin-top: 20px;
-}
-
-#mainLogo {
-    width: 100px;
-    height: 100px;
-    display: inline;
+    font-family: Nexa-Light;
 }
 
 body {
@@ -19,40 +13,98 @@ body {
     padding: 0;
 }
 
-#banner {
-    background-color: #6E2594;
-    padding: 10px;
-    display: flex; /* Allows logo to appear on same line as banner */
-    align-items: center; 
+ul {
+    padding-left: 0;
 }
 
-a, ul {
+a {
     text-decoration: none;
     color: #3F84EF;
 }
 
-.bannerList:hover {
+#mainTitle {
+    display: flex;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    /*font-family: Nexa-Heavy;*/
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
+}
+
+#banner {
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex; /* Allows logo to appear on same line as banner */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bannerListItem:hover {
     background-color: rgb(138, 138, 141);
 }
 
-ul {
-    font-size: 25px;
-    list-style-type: none;
-    z-index: 3;
-    text-align: center;
-    transform: translate(100%,0%);
+.pageLink:hover {
+    text-decoration: underline;
 }
 
 .bannerList {
+    font-size: 25px;
+    z-index: 3;
+}
+
+.bannerListItem {
     padding: 10px;
-    margin: 20px;
+    margin: 40px;
     display: inline;
     border-radius: 15px;
     background-color: ghostwhite;
+    color: black;
+}
+
+#logSignButton {
+    margin: 0;
+    color: black;
+}
+
+#contentContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#mainContentContainer {
+    display: flex;
+    flex-flow: column wrap; 
+    width: 70%;
+}
+
+#rightContent {
+    width: 30%;
+}
+
+.content {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #6E2594;
 }
 
 footer {
-    margin: 20px;
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerList {
+    background-color: none;
+    color: ghostwhite;
+    list-style: none;
 }
 
 .center {
