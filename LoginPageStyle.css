@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("loginBackground.jpg") no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: #6E2594;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative; /* moves images inside of the input boxes */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder { /* :: accesses a specific part of the input box */
+    color: #fff;
+}
+
+.input-box i { /* handles image position */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3F84EF;
+}
+
+#mainTitle {
+    display: flex;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    /*font-family: Nexa-Heavy;*/
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
+}
+
+#banner {
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex; /* Allows logo to appear on same line as banner */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bannerListItem:hover {
+    background-color: rgb(138, 138, 141);
+}
+
+.pageLink:hover {
+    text-decoration: underline;
+}
+
+.bannerList {
+    font-size: 25px;
+    z-index: 3;
+}
+
+.bannerListItem {
+    padding: 10px;
+    margin: 40px; /* ISSUE: makes the buttons have hyperlink clickables that are too large for the button itself */
+    display: inline;
+    border-radius: 15px;
+    background-color: ghostwhite;
+    color: black;
+}
+
+#logSignButton {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: black;
+}
+.content {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #6E2594;
+}
+
+footer {
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.footerList {
+    background-color: none;
+    color: ghostwhite;
+    list-style: none;
+}
