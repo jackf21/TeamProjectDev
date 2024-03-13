@@ -117,7 +117,7 @@ h1 {
 .materialsItem {
     padding-right: 20px;
     color:black;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .materialsItem:not(:last-child) {
@@ -150,3 +150,9 @@ h1 {
 .materialsLists::-webkit-scrollbar-button { 
     display: none; 
 } 
+input[type=checkbox] {
+    accent-color: #6E2594;
+    margin-right: 6px;
+    height: 15px;
+    width: 15px;
+}
