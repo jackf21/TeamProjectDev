@@ -75,10 +75,31 @@ a {
     display: flex;
 }
 
+.content {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #6E2594;
+}
+
 #mainContentContainer {
     display: flex;
     flex-flow: column wrap; 
     width: 80%;
+}
+
+#contentBottom {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#title {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+#tipList {
+    margin-left: 30px;
 }
 
 #rightContent {
@@ -112,12 +133,6 @@ input[type="radio"]:last-of-type {
     margin-right: 0px;
 }
 
-.content {
-    margin: 10px;
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid #6E2594;
-}
 
 footer {
     background-color: #6E2594;
