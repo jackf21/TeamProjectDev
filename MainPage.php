@@ -36,13 +36,14 @@
             <div class="content" id="contentBottom"> <!--Needs Filling In with tips for the website try to write enough to fill in two lines-->
                 <p id="title">Tips For Using The Website!</p>
                 <ul id="tipList">
-                    <li>Creating an account will let you track your study progress by clicking the checkboxes next to the materials and advice</li>
-                    <li>Tip 2</li>
-                    <li>Tip 3</li>
-                    <li>Tip 4</li>
-                    <li>Check out the articles featured on the right hand side to further boost your studying prowess!</li>
-                    <li>Tip 6</li>
-                    <li>Tip 7</li>
+                    <li>Creating an account will let you track your study progress by clicking the checkboxes next to the materials and advice</li><br>
+                    <li>Use the navigation bars at the top to move between pages</li><br>
+                    <li>The materials arent listed in order so feel free to check out any of them at any time; Whatever works for you!</li><br>
+                    <li>Not all of the advice will be good to for you specifically, try to identify what kind of learner you are to pick out the advice that is best for you</li><br>
+                    <li>
+                        We've curated a selection of articles that we consider to be extremely helpful in your studying, take the time to read all of them, 
+                        they are featured on the righthand side
+                    </li>
                 </ul>
             </div>
         </div>
