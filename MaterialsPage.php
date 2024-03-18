@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyStudy - Materials</title>
-    <link rel="stylesheet" href="css/MaterialsStyle.css">
+    <link rel="stylesheet" href="MaterialsStyle.css">
 </head>
 
 <body>
     <header id="banner">
-        <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/>
+        <img src="logo.png" alt="MyStudy Logo" id="mainLogo"/>
         <ul class="bannerList">
-            <a href="MainPage.php"><li class="bannerListItem"><strong>Home</strong></li></a> 
-            <a href="StudyAdvicePage.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
-            <a href="MaterialsPage.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
+            <a href="MainPage.html"><li class="bannerListItem"><strong>Home</strong></li></a> 
+            <a href="A&R.html"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href="H&J.html"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
-            <a href="LoginPage.php"><button class="bannerListItem" id="logSignButton">Login</button></a>
+            <a href="LoginPage.html"><button class="bannerListItem" id="logSignButton">Login</button></a>
         </div>
     </header>
 
