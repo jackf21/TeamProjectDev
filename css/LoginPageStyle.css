@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("loginBackground.jpg") no-repeat;
+    background: url("../images/loginBackground.jpg") no-repeat;
     min-height: 100vh;
     margin: 0;
 }

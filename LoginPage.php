@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyStudy - Main Page</title>
+    <title>MyStudy - Login</title>
     <link rel="stylesheet" href="LoginPageStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header id="banner">
-        <img src="logo.png" alt="MyStudy Logo" id="mainLogo"/> 
+        <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/> 
         <ul class="bannerList">
-            <a href="MainPage.html"><li class="bannerListItem"><strong>Home</strong></li></a> 
-            <a href="A&R.html"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
-            <a href="H&J.html"><li class="bannerListItem"><strong>Materials</strong></li></a> 
+            <a href="MainPage.php"><li class="bannerListItem"><strong>Home</strong></li></a> 
+            <a href="StudyAdvicePage.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href="MaterialsPage.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
-            <a href="LoginPage.html"><button class="bannerListItem" id="logSignButton">Login</button></a>
+            <a href="LoginPage.php"><button class="bannerListItem" id="logSignButton">Login</button></a>
         </div>
     </header>
 
@@ -40,7 +40,7 @@
                 <button type="submit" class="btn">Login</button>
 
                 <div class="register-link">
-                    <p>Don't have an account? <a href="RegisterPage.html">Register</a></p>
+                    <p>Don't have an account? <a href="RegisterPage.php">Register</a></p>
                 </div>
             </form>
         </div>
