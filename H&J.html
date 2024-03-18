@@ -37,39 +37,39 @@
         <div class="list">
             <h1>Books</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem" class="filter webDev">Don't make me think - Steve Krug</li>
-                    <li class="materialsItem" class="filter webDev">Smashing Mobile Web Development - Greg Avola</li>
-                    <li class="materialsItem" class="filter database">MySQL Crash Course: A Hands-on Introduction to Database Development - Rick Silva</li>
-                    <li class="materialsItem" class="filter database">Database Systems: The Complete Book - Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom</li>
-                    <li class="materialsItem" class="filter database">Database Design for Mere Mortals - Michael J. Hernandez</li>
-                    <li class="materialsItem" class="filter maths">O'Reilly's Introduction to Discrete Mathematics</li>
-                    <li class="materialsItem" class="filter maths">A Concise Introduction to Pure Mathematics - M. Liebeck</li>
-                    <li class="materialsItem" class="filter maths">Guide to Analysis - M. Hart and D. Towers</li>
-                    <li class="materialsItem" class="filter programming">The Pragmatic Programmer - Andrew Hunt and David Thomas</li>
-                    <li class="materialsItem" class="filter programming">Head First Java - Kathy Sierra & Bert Bates</li>
-                    <li class="materialsItem" class="filter groupProject">Software Development Pearls: Lessons from Fifty Years of Software Experience, 1st edition</li>
+                    <li class="materialsItem" class="filter webDev"><input type="checkbox" value="true">Don't make me think - Steve Krug</li>
+                    <li class="materialsItem" class="filter webDev"><input type="checkbox" value="true">Smashing Mobile Web Development - Greg Avola</li>
+                    <li class="materialsItem" class="filter database"><input type="checkbox" value="true">MySQL Crash Course: A Hands-on Introduction to Database Development - Rick Silva</li>
+                    <li class="materialsItem" class="filter database"><input type="checkbox" value="true">Database Systems: The Complete Book - Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom</li>
+                    <li class="materialsItem" class="filter database"><input type="checkbox" value="true">Database Design for Mere Mortals - Michael J. Hernandez</li>
+                    <li class="materialsItem" class="filter maths"><input type="checkbox" value="true">O'Reilly's Introduction to Discrete Mathematics</li>
+                    <li class="materialsItem" class="filter maths"><input type="checkbox" value="true">A Concise Introduction to Pure Mathematics - M. Liebeck</li>
+                    <li class="materialsItem" class="filter maths"><input type="checkbox" value="true">Guide to Analysis - M. Hart and D. Towers</li>
+                    <li class="materialsItem" class="filter programming"><input type="checkbox" value="true">The Pragmatic Programmer - Andrew Hunt and David Thomas</li>
+                    <li class="materialsItem" class="filter programming"><input type="checkbox" value="true">Head First Java - Kathy Sierra & Bert Bates</li>
+                    <li class="materialsItem" class="filter groupProject"><input type="checkbox" value="true">Software Development Pearls: Lessons from Fifty Years of Software Experience, 1st edition</li>
                 </ul>
         </div>
 
         <div class="list">
             <h1>Websites</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
                 </ul>
         </div>
 
         <div class="list">
             <h1>YouTube</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
-                    <li class="materialsItem" class="filter "></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
                 </ul>
         </div>
     </div>
