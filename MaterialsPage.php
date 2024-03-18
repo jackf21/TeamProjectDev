@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyStudy - Materials</title>
-    <link rel="stylesheet" href="css/MaterialsStyle.css">
+    <link rel="stylesheet" href="MaterialsStyle.css">
 </head>
 
 <body>
     <header id="banner">
-        <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/>
+        <img src="logo.png" alt="MyStudy Logo" id="mainLogo"/>
         <ul class="bannerList">
-            <a href="MainPage.php"><li class="bannerListItem"><strong>Home</strong></li></a> 
-            <a href="StudyAdvicePage.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
-            <a href="MaterialsPage.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
+            <a href="MainPage.html"><li class="bannerListItem"><strong>Home</strong></li></a> 
+            <a href="A&R.html"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href="H&J.html"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
-            <a href="LoginPage.php"><button class="bannerListItem" id="logSignButton">Login</button></a>
+            <a href="LoginPage.html"><button class="bannerListItem" id="logSignButton">Login</button></a>
         </div>
     </header>
 
     <h id=mainTitle>Materials</h>
+
+    <div id="filterLine">
+        <label for="filters">Subjects:</label>
+        <select name="filters" id="subjects">
+            <option value="any">Any</option>
+            <option value="database">Database</option>
+            <option value="maths">Mathematics</option>
+            <option value="programming">Programming</option>
+            <option value="webDev">Web Development</option>
+        </select>
+
+        <label for="completed">Status:</label>
+        <select name="filters" id="completed">
+            <option value="any">Any</option>
+            <option value="finished">Finished</option>
+            <option value="unfinished">Unfinished</option>
+        </select>
+    </div>
 
     <div id="materials">
         <div class="list">
@@ -54,22 +72,22 @@
         <div class="list">
             <h1>Websites</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href="https://www.w3schools.com/"></a><li class="materialsItem" class="filter programming"><input type="checkbox" value="true">W3Schools</li>
+                    <a href="https://stackoverflow.com/"></a><li class="materialsItem" class="filter programming"><input type="checkbox" value="true">Stack Overflow</li>
+                    <a href="https://leetcode.com/"></a><li class="materialsItem" class="filter programming"><input type="checkbox" value="true">Leetcode</li>
+                    <a href="https://www.hackerrank.com/"></a><li class="materialsItem" class="filter programming"><input type="checkbox" value="true">Hackerrank</li>
+                    <a href="https://www.cs.ox.ac.uk/geomlab/"></a><li class="materialsItem" class="filter programming"><input type="checkbox" value="true">GeomLab website</li>
                 </ul>
         </div>
 
         <div class="list">
             <h1>YouTube</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
-                    <li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href=""></a><li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href=""></a><li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href=""></a><li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href=""></a><li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
+                    <a href=""></a><li class="materialsItem" class="filter "><input type="checkbox" value="true"></li>
                 </ul>
         </div>
     </div>
