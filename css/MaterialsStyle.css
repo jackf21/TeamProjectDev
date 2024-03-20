@@ -150,6 +150,7 @@ h1 {
 .materialsLists::-webkit-scrollbar-button { 
     display: none; 
 } 
+
 input[type=checkbox] {
     accent-color: #6E2594;
     margin-right: 6px;
@@ -157,11 +158,18 @@ input[type=checkbox] {
     width: 15px;
 }
 
-
 #filterLine {
     border-style:solid;
     padding: 20px;
     margin-left:40px;
     width: 450px;
     background-color: #9E55c4;
+}
+
+.filter {
+    display: none;
+}
+
+.show {
+    display: block;
 }
