@@ -1,36 +1,61 @@
 window.onload = () => {
-    filterMaterials("any")
+    filterMaterials()
 }
 
-function filterMaterials(item) {
-    var x, i;
-    x = document.getElementsByClassName("filter");
-    if (item == "any") {
-        item = "filter";
+function filterMaterials() {
+    filterSubject(document.getElementById("subject").value)
+    filterStatus(document.getElementById("status").value)
+}
+
+function filterSubject(subject) {
+    var allElements;
+    allElements = document.getElementsByClassName("filter");
+    if (subject == "any") {
+        subject = "";
     }
     
-    for (i = 0; i < x.length; i++) {
-        RemoveItem(x[i], "show");
-        if (x[i].className.indexOf(item) > -1) {
-            AddItem(x[i], "show")
+    for (var i = 0; i < allElements.length; i++) {
+        RemoveItem(allElements[i], "show");
+        if (allElements[i].className.indexOf(subject) > -1) {
+            AddItem(allElements[i], "show")
         }
     }
 }
 
-function AddItem(item, name) {
-    var arr1;
-    arr1 = item.className.split(" ");
-    if (arr1.indexOf(name == -1)) {
-        item.className += " " + name;
+function AddItem(element, show) {
+    var elementClasses;
+    elementClasses = element.className.split(" ");
+    if (elementClasses.indexOf(show == -1)) {
+        element.className += " " + show;
     }
     
 }
 
-function RemoveItem (item, name) {
-    var arr1;
-    arr1 = item.className.split(" ");
-    while (arr1.indexOf(name) > -1) {
-        arr1.splice(arr1.indexOf(name), 1)
+function RemoveItem (element, show) {
+    var elementClasses;
+    elementClasses = element.className.split(" ");
+    while (elementClasses.indexOf(show) > -1) {
+        elementClasses.splice(elementClasses.indexOf(show), 1)
     }
-    item.className = arr1.join(" ")
+    element.className = elementClasses.join(" ")
+}
+
+function filterStatus(status) {
+    var allElements
+    allElements = document.getElementsByClassName("checkbox");
+    allStatus = document.getElementsByClassName("status");
+    for (var i = 0; i < allElements.length; i++) {
+        if (allElements[i].className.indexOf("show") > -1) {
+            RemoveItem(allElements[i], "show")
+            if (status == "any") {
+                AddItem(allElements[i], "show")
+            }
+            else if (status == "finished" && allStatus[i].checked) {
+                AddItem(allElements[i], "show")
+            }
+            else if (status == "unfinished" && !allStatus[i].checked) {
+                AddItem(allElements[i], "show")
+            }
+        }
+    }
 }

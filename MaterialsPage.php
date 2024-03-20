@@ -26,7 +26,7 @@
 
     <div id="filterLine">
         <label for="filters">Subjects:</label>
-        <select onchange="filterMaterials(value)" name="filters" id="subjects">
+        <select onchange="filterMaterials()" name="filters" id="subject">
             <option value="any">Any</option>
             <option value="database">Database</option>
             <option value="maths">Mathematics</option>
@@ -35,7 +35,7 @@
         </select>
 
         <label for="completed">Status:</label>
-        <select name="filters" id="completed">
+        <select onchange="filterMaterials()" name="filters" id="status">
             <option value="any">Any</option>
             <option value="finished">Finished</option>
             <option value="unfinished">Unfinished</option>
@@ -48,7 +48,6 @@
                 <ul class="materialsLists">
                     <a href="https://chat.openai.com/"><li class="materialsItem">ChatGPT</li></a>
                     <a href="https://www.codium.ai/"><li class="materialsItem">Codeium</li></a>
-                    <li class="materialsItem">BingAI</li>
                     <a href="https://copilot.microsoft.com/"><li class="materialsItem">Copilot</li></a>
                 </ul>
         </div>
@@ -56,39 +55,39 @@
         <div class="list">
             <h1>Books</h1>
                 <ul class="materialsLists">
-                    <li class="materialsItem filter webDev"><input type="checkbox" value="true">Don't make me think - Steve Krug</li>
-                    <li class="materialsItem filter webDev"><input type="checkbox" value="true">Smashing Mobile Web Development - Greg Avola</li>
-                    <li class="materialsItem filter database"><input type="checkbox" value="true">MySQL Crash Course: A Hands-on Introduction to Database Development - Rick Silva</li>
-                    <li class="materialsItem filter database"><input type="checkbox" value="true">Database Systems: The Complete Book - Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom</li>
-                    <li class="materialsItem filter database"><input type="checkbox" value="true">Database Design for Mere Mortals - Michael J. Hernandez</li>
-                    <li class="materialsItem filter maths"><input type="checkbox" value="true">O'Reilly's Introduction to Discrete Mathematics</li>
-                    <li class="materialsItem filter maths"><input type="checkbox" value="true">A Concise Introduction to Pure Mathematics - M. Liebeck</li>
-                    <li class="materialsItem filter maths"><input type="checkbox" value="true">Guide to Analysis - M. Hart and D. Towers</li>
-                    <li class="materialsItem filter programming"><input type="checkbox" value="true">The Pragmatic Programmer - Andrew Hunt and David Thomas</li>
-                    <li class="materialsItem filter programming"><input type="checkbox" value="true">Head First Java - Kathy Sierra & Bert Bates</li>
-                    <li class="materialsItem filter groupProject"><input type="checkbox" value="true">Software Development Pearls: Lessons from Fifty Years of Software Experience, 1st edition</li>
+                    <li class="materialsItem checkbox filter webDev"><input type="checkbox" class="status">Don't make me think - Steve Krug</li>
+                    <li class="materialsItem checkbox filter webDev"><input type="checkbox" class="status">Smashing Mobile Web Development - Greg Avola</li>
+                    <li class="materialsItem checkbox filter database"><input type="checkbox" class="status">MySQL Crash Course: A Hands-on Introduction to Database Development - Rick Silva</li>
+                    <li class="materialsItem checkbox filter database"><input type="checkbox" class="status">Database Systems: The Complete Book - Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom</li>
+                    <li class="materialsItem checkbox filter database"><input type="checkbox" class="status">Database Design for Mere Mortals - Michael J. Hernandez</li>
+                    <li class="materialsItem checkbox filter maths"><input type="checkbox" class="status">O'Reilly's Introduction to Discrete Mathematics</li>
+                    <li class="materialsItem checkbox filter maths"><input type="checkbox" class="status">A Concise Introduction to Pure Mathematics - M. Liebeck</li>
+                    <li class="materialsItem checkbox filter maths"><input type="checkbox" class="status">Guide to Analysis - M. Hart and D. Towers</li>
+                    <li class="materialsItem checkbox filter programming"><input type="checkbox" class="status">The Pragmatic Programmer - Andrew Hunt and David Thomas</li>
+                    <li class="materialsItem checkbox filter programming"><input type="checkbox" class="status">Head First Java - Kathy Sierra & Bert Bates</li>
+                    <li class="materialsItem checkbox filter groupProject"><input type="checkbox" class="status">Software Development Pearls: Lessons from Fifty Years of Software Experience, 1st edition</li>
                 </ul>
         </div>
 
         <div class="list">
             <h1>Websites</h1>
                 <ul class="materialsLists">
-                    <a href="https://www.w3schools.com/"></a><li class="materialsItem filter programming">W3Schools</li>
-                    <a href="https://stackoverflow.com/"></a><li class="materialsItem filter programming">Stack Overflow</li>
-                    <a href="https://leetcode.com/"></a><li class="materialsItem filter programming">Leetcode</li>
-                    <a href="https://www.hackerrank.com/"></a><li class="materialsItem filter programming">Hackerrank</li>
-                    <a href="https://www.cs.ox.ac.uk/geomlab/"></a><li class="materialsItem filter programming">GeomLab website</li>
+                    <a href="https://www.w3schools.com/"><li class="materialsItem">W3Schools</li></a>
+                    <a href="https://stackoverflow.com/"><li class="materialsItem filter programming">Stack Overflow</li></a>
+                    <a href="https://leetcode.com/"><li class="materialsItem filter programming">Leetcode</li></a>
+                    <a href="https://www.hackerrank.com/"><li class="materialsItem filter programming">Hackerrank</li></a>
+                    <a href="https://www.cs.ox.ac.uk/geomlab/"><li class="materialsItem filter programming">GeomLab website</li></a>
                 </ul>
         </div>
 
         <div class="list">
             <h1>YouTube</h1>
                 <ul class="materialsLists">
-                    <a href="https://www.youtube.com/@freecodecamp"></a><li class="materialsItem filter webDev database"><input type="checkbox" value="true"></li>
-                    <a href="https://www.youtube.com/@nesoacademy"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
-                    <a href="https://www.youtube.com/@MyLesson007"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
-                    <a href="https://www.youtube.com/@Dani_Krossing/"></a><li class="materialsItem filter webDev"><input type="checkbox" value="true"></li>
-                    <a href="https://www.youtube.com/@SimplilearnOfficial"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@freecodecamp"><li class="materialsItem checkbox filter webDev"><input type="checkbox" class="status">freeCodeCamp.org</li></a>
+                    <a href="https://www.youtube.com/@nesoacademy"><li class="materialsItem checkbox"><input type="checkbox" class="status">Neso Academy</li></a>
+                    <a href="https://www.youtube.com/@MyLesson007"><li class="materialsItem checkbox"><input type="checkbox" class="status">My Lesson</li></a>
+                    <a href="https://www.youtube.com/@Dani_Krossing/"><li class="materialsItem checkbox filter webDev"><input type="checkbox" class="status">Dani Krossing</li></a>
+                    <a href="https://www.youtube.com/@SimplilearnOfficial"><li class="materialsItem checkbox"><input type="checkbox" class="status">Simplilearn</li></a>
                 </ul>
         </div>
     </div>
@@ -108,6 +107,5 @@
         </ul>
         <div></div>
     </footer>
-
 </body>
 </html>
