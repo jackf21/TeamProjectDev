@@ -84,11 +84,11 @@
         <div class="list">
             <h1>YouTube</h1>
                 <ul class="materialsLists">
-                    <a href=""></a><li class="materialsItem filter "><input type="checkbox" value="true"></li>
-                    <a href=""></a><li class="materialsItem filter "><input type="checkbox" value="true"></li>
-                    <a href=""></a><li class="materialsItem filter "><input type="checkbox" value="true"></li>
-                    <a href=""></a><li class="materialsItem filter "><input type="checkbox" value="true"></li>
-                    <a href=""></a><li class="materialsItem filter "><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@freecodecamp"></a><li class="materialsItem filter webDev database"><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@nesoacademy"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@MyLesson007"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@Dani_Krossing/"></a><li class="materialsItem filter webDev"><input type="checkbox" value="true"></li>
+                    <a href="https://www.youtube.com/@SimplilearnOfficial"></a><li class="materialsItem"><input type="checkbox" value="true"></li>
                 </ul>
         </div>
     </div>
