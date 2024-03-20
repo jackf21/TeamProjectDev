@@ -73,11 +73,11 @@
         <div class="list">
             <h1>Websites</h1>
                 <ul class="materialsLists">
-                    <a href="https://www.w3schools.com/"></a><li class="materialsItem filter programming"><input type="checkbox" value="true">W3Schools</li>
-                    <a href="https://stackoverflow.com/"></a><li class="materialsItem filter programming"><input type="checkbox" value="true">Stack Overflow</li>
-                    <a href="https://leetcode.com/"></a><li class="materialsItem filter programming"><input type="checkbox" value="true">Leetcode</li>
-                    <a href="https://www.hackerrank.com/"></a><li class="materialsItem filter programming"><input type="checkbox" value="true">Hackerrank</li>
-                    <a href="https://www.cs.ox.ac.uk/geomlab/"></a><li class="materialsItem filter programming"><input type="checkbox" value="true">GeomLab website</li>
+                    <a href="https://www.w3schools.com/"></a><li class="materialsItem filter programming">W3Schools</li>
+                    <a href="https://stackoverflow.com/"></a><li class="materialsItem filter programming">Stack Overflow</li>
+                    <a href="https://leetcode.com/"></a><li class="materialsItem filter programming">Leetcode</li>
+                    <a href="https://www.hackerrank.com/"></a><li class="materialsItem filter programming">Hackerrank</li>
+                    <a href="https://www.cs.ox.ac.uk/geomlab/"></a><li class="materialsItem filter programming">GeomLab website</li>
                 </ul>
         </div>
 

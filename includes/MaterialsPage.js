@@ -5,7 +5,7 @@ window.onload = () => {
 function filterMaterials(item) {
     var x, i;
     x = document.getElementsByClassName("filter");
-    if (item = "any") {
+    if (item == "any") {
         item = "filter";
     }
     
