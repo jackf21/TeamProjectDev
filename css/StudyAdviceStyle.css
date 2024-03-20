@@ -48,6 +48,11 @@ a {
     z-index: 3;
 }
 
+h1{
+    text-align: center;
+    font-size: 75px;
+    margin: 40px;
+}
 .bannerListItem {
     padding: 10px;
     margin: 40px;
@@ -91,10 +96,6 @@ footer {
     justify-content: space-evenly;
 }
 
-h1 {
-    margin-top: 0px;
-    position: absolute;
-}
 
 .materialsLists {
     list-style-type: none;
@@ -176,29 +177,40 @@ h1 {
 #contentContainer {
     display: flex;
     flex-flow: row nowrap;
+    border-width: 0px;
 }
 
 #mainContentContainer {
     display: flex;
     width: 70%;
+    border-width: 0px;
 }
 
 #rightContent {
     width: 30%;
+    border-width: 0px;
 }
 
 #contentContainer1 {
     display: flex;
     flex-flow: row nowrap;
+    border-width: 0px;
 }
 
 #mainContentContainer1 {
     display: flex;
     width: 30%;
+    border-width: 0px;
+
 }
 
 #rightContent1 {
     width: 70%;
+    border-width: 0px;
+}
+
+#leftContent {
+    border-width: 0px;
 }
 
 #faqSection {

@@ -8,11 +8,11 @@
 </head>
 <body>
     <header id="banner">
-        <img src="logo.png" alt="MyStudy Logo" id="mainLogo"/>
+        <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/>
         <ul class="bannerList">
             <a href="MainPage.php"><li class="bannerListItem"><strong>Home</strong></li></a> 
-            <a href="A&R.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
-            <a href="H&J.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
+            <a href="StudyAdvicePage.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href="MaterialsPage.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
             <a href="LoginPage.php"><button class="bannerListItem" id="logSignButton">Login</button></a>
@@ -26,11 +26,11 @@
     <div id="contentContainer">
         <div id="mainContentContainer">
 
-            <p class="content">
+            <p class="content" id="leftContent">
                 <strong id="rightContentTitle">SHORT COURSES</strong>
                 <br>
-                
-                Verily, let it be known that the halls of Multimedia University, henceforth known as MMU, doth resonate with the eminent echoes of erudition, presenting unto the discerning denizens of the realm a plethora of short courses, each a jewel in the diadem of knowledge. These brief yet potent courses, artfully curated by the wise custodians of MMU, proffer unto eager seekers the chance to partake in a concentrated draught of wisdom, spanning an expansive tapestry of disciplines. Verily, the pedagogues, steeped in scholarly lore and seasoned in the crucible of their respective crafts, do guide aspirants through these temporal journeys, illuminating the labyrinthine corridors of technology, business, communication, design, and the mystic arts of digital media. The hallowed precincts of MMU's bastions provide an ambiance of scholarly pursuit, wherein participants are enveloped by the embrace of cutting-edge technologies and ensconced in the arms of state-of-the-art facilities. 'Tis an environment wherein the crucible of academia melds seamlessly with the exigencies of the corporeal world, crafting a nexus of learning that resonates with both theoretical profundity and practical applicability. These short courses, verily, stand as a testament to MMU's noble commitment to fostering lifelong erudition, catering to both the seasoned artisan desiring to hone his craft and the neophyte yearning to unfurl the parchment of knowledge in new realms. In the realm of MMU's short courses, the past and present converge, as the modern seeker, in donning the cloak of medieval eloquence, finds himself transmuted into an erudite voyager, navigating the currents of knowledge with chivalric zeal and intellectual grace.
+                A large selection of short courses in a variety of topics, such as business, digital media, design, health, and more, are available at Manchester Metropolitan University. These courses are accessible to all students due to their flexibility, including alternatives for full-time, part-time, evening, weekend, and online study. These courses, which are instructed by professionals in the field, offer learners useful skills and insightful knowledge that improves both their professional and personal development. The short courses offered by MMU provide a convenient and interesting learning experience, regardless of your goals: job advancement, field exploration, or personal curiosity.
+                <br>
                 To learn More Click 
                 <a href="https://www.mmu.ac.uk/student-life/course/study-skills/short-courses"> Here!</a>
                 <br>
@@ -39,24 +39,41 @@
         </div>
     
         <p class="content" id="rightContent">
-            <img src="glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
+            <img src="images/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
         </p>
     </div>
 
     <div id="contentContainer1">
         <div id="mainContentContainer1">
 
-            <p class="content">
-            <img src="space-sjryfre8k8f6i3ge.jpg" width="700" height="400">
+            <p class="content" id="leftContent">
+            <img src="images/space-sjryfre8k8f6i3ge.jpg" width="700" height="400">
 
 
             </p>
         </div>
-    
+
         <p class="content" id="rightContent1">
             <strong id="rightContentTitle">PREPARING TO STUDY</strong>
             <br>
-            Verily, the commencement of one's preparations for scholarly pursuits doth unfold as a noble and momentous undertaking. Aye, this journey entails the meticulous perusal of the chosen field of study and the august institution that doth proffer such erudition. The diligent scrutiny of the curriculum, the sagacious faculty's expertise, and the opulent resources at hand bestow upon the seeker a discerning discernment for an informed choice. Beyond the mere confines of academia, the preparation for study doth necessitate the cultivation of a virtuous mindset, one imbued with curiosity, fortitude, and a willingness to confront challenges with mettle. The alchemy of time management doth serve as a linchpin, ensuring a harmonious balance betwixt scholastic endeavors and the obligations of personal and professional station. The honing of sagacious study habits, the creation of a sanctified space for intellectual pursuit, and the judicious utilization of diverse founts of knowledge lay the groundwork for triumph in the academic realm. Seeking the wise counsel of mentors and kindred spirits amongst the academic brethren doth offer pearls of wisdom, unveiling the esoteric nuances of scholarly life. Furthermore, the weaving of a network and the cultivation of connections within the academic fraternity doth ennoble one's educational odyssey. In this epoch of technological marvels, embracing the advancements of the digital realm, incorporating tools for research, collaboration, and organization, doth mark a prudent stride in navigating the scholarly landscape. Thus, the preparation to embark upon the pursuit of knowledge is not merely a logistical endeavor but a holistic pilgrimage, wherein intellectual, emotional, and practical readiness intertwine in the fabric of one's noble quest for erudition.
+            A few crucial actions must be taken in order to get ready to attend Manchester Metropolitan University (MMU):
+            <br>                
+            1. Do some research on your course. Select a course based on your professional objectives and areas of interest.
+            <br>
+            2. Apply and Arrange Finances: Finish your application and arrange your funds, taking into account your living expenses and tuition costs.
+            <br>
+            3. Make Accommodations: Apply as soon as possible for student housing, taking into account amenities and location.
+            <br>
+            4. Get to Know the Campus: Take a tour of the campus and become acquainted with its resources and services.
+            <br>
+            5. Academic Preparation: Review any knowledge or abilities needed for your course.
+            <br>
+            6. Make Connections: Attend events or join online organisations to network with other students.
+            <br>
+            7. Take Care of Yourself: Make maintaining a healthy lifestyle a priority for your health.
+            <br>
+            8. You'll be ready to begin your studies at MMU if you take these steps.
+            <br>
             To learn More Click 
             <a href="https://www.mmu.ac.uk/student-life/course/study-skills/preparing-to-study"> Here!</a>
             <br>
@@ -66,11 +83,25 @@
     <div id="contentContainer">
         <div id="mainContentContainer">
 
-            <p class="content">
+            <p class="content" id="leftContent">
                 <strong id="rightContentTitle">MATHS AND STATISTICS SUPPORT</strong>
                 <br>
-                
-                Verily, let it be known that the halls of Multimedia University, henceforth known as MMU, doth resonate with the eminent echoes of erudition, presenting unto the discerning denizens of the realm a plethora of short courses, each a jewel in the diadem of knowledge. These brief yet potent courses, artfully curated by the wise custodians of MMU, proffer unto eager seekers the chance to partake in a concentrated draught of wisdom, spanning an expansive tapestry of disciplines. Verily, the pedagogues, steeped in scholarly lore and seasoned in the crucible of their respective crafts, do guide aspirants through these temporal journeys, illuminating the labyrinthine corridors of technology, business, communication, design, and the mystic arts of digital media. The hallowed precincts of MMU's bastions provide an ambiance of scholarly pursuit, wherein participants are enveloped by the embrace of cutting-edge technologies and ensconced in the arms of state-of-the-art facilities. 'Tis an environment wherein the crucible of academia melds seamlessly with the exigencies of the corporeal world, crafting a nexus of learning that resonates with both theoretical profundity and practical applicability. These short courses, verily, stand as a testament to MMU's noble commitment to fostering lifelong erudition, catering to both the seasoned artisan desiring to hone his craft and the neophyte yearning to unfurl the parchment of knowledge in new realms. In the realm of MMU's short courses, the past and present converge, as the modern seeker, in donning the cloak of medieval eloquence, finds himself transmuted into an erudite voyager, navigating the currents of knowledge with chivalric zeal and intellectual grace.
+                Students at Manchester Metropolitan University (MMU) have access to extensive maths and statistics support:
+                <br>
+                1. Drop-in Sessions: Individualised help from knowledgeable tutors.
+                <br>
+                2. Workshops and Online Resources: Additional instruction and engaging content to support learning.
+                <br>
+                3. Study groups: cooperative learning settings for assisting one another.
+                <br>
+                4. Expert Support: Personalised help for classes with rigorous math prerequisites.
+                <br>
+                5. Exam Preparation: Attend workshops and revision sessions to get ready for tests.
+                <br>
+                6. Accessibility: Provision of services to guarantee inclusion and assistance to all pupils.
+                <br>
+                7. These materials guarantee that MMU students receive the resources and support they require to excel in their mathematics coursework.
+                <br>
                 To learn More Click 
                 <a href="https://www.mmu.ac.uk/student-life/course/study-skills/numeracy-support"> Here!</a>
                 <br>
@@ -79,24 +110,25 @@
         </div>
     
         <p class="content" id="rightContent">
-            <img src="glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
+            <img src="images/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
         </p>
     </div>
 
     <div id="contentContainer1">
         <div id="mainContentContainer1">
 
-            <p class="content">
-            <img src="space-sjryfre8k8f6i3ge.jpg" width="700" height="400">
+            <p class="content" id="leftContent">
+            <img src="images/space-sjryfre8k8f6i3ge.jpg" width="700" height="400">
 
 
             </p>
         </div>
     
         <p class="content" id="rightContent1">
-            <strong id="rightContentTitle">PREPARING TO STUDY</strong>
+            <strong id="rightContentTitle">STUDY SKILLS ONLINE</strong>
             <br>
-            Verily, the commencement of one's preparations for scholarly pursuits doth unfold as a noble and momentous undertaking. Aye, this journey entails the meticulous perusal of the chosen field of study and the august institution that doth proffer such erudition. The diligent scrutiny of the curriculum, the sagacious faculty's expertise, and the opulent resources at hand bestow upon the seeker a discerning discernment for an informed choice. Beyond the mere confines of academia, the preparation for study doth necessitate the cultivation of a virtuous mindset, one imbued with curiosity, fortitude, and a willingness to confront challenges with mettle. The alchemy of time management doth serve as a linchpin, ensuring a harmonious balance betwixt scholastic endeavors and the obligations of personal and professional station. The honing of sagacious study habits, the creation of a sanctified space for intellectual pursuit, and the judicious utilization of diverse founts of knowledge lay the groundwork for triumph in the academic realm. Seeking the wise counsel of mentors and kindred spirits amongst the academic brethren doth offer pearls of wisdom, unveiling the esoteric nuances of scholarly life. Furthermore, the weaving of a network and the cultivation of connections within the academic fraternity doth ennoble one's educational odyssey. In this epoch of technological marvels, embracing the advancements of the digital realm, incorporating tools for research, collaboration, and organization, doth mark a prudent stride in navigating the scholarly landscape. Thus, the preparation to embark upon the pursuit of knowledge is not merely a logistical endeavor but a holistic pilgrimage, wherein intellectual, emotional, and practical readiness intertwine in the fabric of one's noble quest for erudition.
+            Manchester Metropolitan University (MMU) promotes student success by means of Study Skills Online, a strong platform that cultivates academic brilliance and necessary study skills. It caters to a variety of learning demands by providing easily available materials in writing, critical thinking, time management, and test preparation. Interactive modules encourage deeper knowledge and confident application of skills by providing students with quizzes, exercises, and multimedia presentations. Students who have personalised learning paths are able to set goals and receive specialised help for their academic development. The portal offers supplemental information for several disciplines and easily interacts with curriculum. MMU makes sure that knowledge is used in practical ways, which improves student achievement in the classroom. Study Skills Online is updated frequently to accommodate students' evolving requirements and academic expectations. MMU's dedication to student achievement is demonstrated by its innovative assistance strategy.
+            <br>
             To learn More Click 
             <a href="https://www.mmu.ac.uk/student-life/course/study-skills/online"> Here!</a>
             <br>
@@ -106,11 +138,23 @@
     <div id="contentContainer">
         <div id="mainContentContainer">
 
-            <p class="content">
-                <strong id="rightContentTitle">SHORT COURSES</strong>
+            <p class="content" id="leftContent" >
+                <strong id="rightContentTitle">GET ONE-TO-ONE SUPPORT</strong>
                 <br>
-                
-                Verily, let it be known that the halls of Multimedia University, henceforth known as MMU, doth resonate with the eminent echoes of erudition, presenting unto the discerning denizens of the realm a plethora of short courses, each a jewel in the diadem of knowledge. These brief yet potent courses, artfully curated by the wise custodians of MMU, proffer unto eager seekers the chance to partake in a concentrated draught of wisdom, spanning an expansive tapestry of disciplines. Verily, the pedagogues, steeped in scholarly lore and seasoned in the crucible of their respective crafts, do guide aspirants through these temporal journeys, illuminating the labyrinthine corridors of technology, business, communication, design, and the mystic arts of digital media. The hallowed precincts of MMU's bastions provide an ambiance of scholarly pursuit, wherein participants are enveloped by the embrace of cutting-edge technologies and ensconced in the arms of state-of-the-art facilities. 'Tis an environment wherein the crucible of academia melds seamlessly with the exigencies of the corporeal world, crafting a nexus of learning that resonates with both theoretical profundity and practical applicability. These short courses, verily, stand as a testament to MMU's noble commitment to fostering lifelong erudition, catering to both the seasoned artisan desiring to hone his craft and the neophyte yearning to unfurl the parchment of knowledge in new realms. In the realm of MMU's short courses, the past and present converge, as the modern seeker, in donning the cloak of medieval eloquence, finds himself transmuted into an erudite voyager, navigating the currents of knowledge with chivalric zeal and intellectual grace.
+                Students at Manchester Metropolitan University (MMU) receive individualised, needs-based one-on-one support:
+                <br>
+                1. Academic Support: Advisors and tutors assist students in comprehending their curriculum and developing their study techniques.
+                <br>
+                2. Personal Counselling: Students with mental health issues or personal challenges can receive confidential support during these sessions.
+                <br>
+                3. Career Guidance: Advisors help with professional development, job searches, and career planning.
+                <br>
+                4. Study Skills Coaching: Through coaching sessions, students can improve their time management and study habits.
+                <br>
+                5. Flexible Delivery: Help can be given over the phone, in person, or through video conference.
+                <br>
+                6.Constant Availability: Throughout the academic year, MMU provides continuous support.
+                <br>
                 To learn More Click 
                 <a href="https://www.mmu.ac.uk/student-life/course/study-skills/1-2-1"> Here!</a>
                 <br>
@@ -119,10 +163,11 @@
         </div>
     
         <p class="content" id="rightContent">
-            <img src="glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
+            <img src="images/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif" alt="Courses">
         </p>
     </div>
 
+    <!-- ADD ACORIAN PLEASE ARRON LOVE YOU ;)  -->
     <section id="faqSection">
         <h2 class="center">Frequently Asked Questions</h2>
         <div class="faqItem">
