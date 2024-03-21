@@ -51,27 +51,76 @@
         <div class="content" id="rightContent">
             <strong id="rightContentTitle"><u>Useful Articles</u></strong>
 
+            <!------------------------------------------------------------------------------------------------------------------------------->
 
-            <a href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
                 <div class="Article">
                     <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
-                    <span>Title</span>
+                    <span>Group1</span>
                 </div>
             </a>
 
-            <a href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
                 <div class="Article">
                     <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
-                    <span>Title</span>
+                    <span>Group1</span>
                 </div>
             </a>
 
-            <a href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
                 <div class="Article">
                     <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
-                    <span>Title</span>
+                    <span>Group1</span>
                 </div>
             </a>
+
+            <!------------------------------------------------------------------------------------------------------------------------------->
+            
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group2</span>
+                </div>
+            </a>
+
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group2</span>
+                </div>
+            </a>
+
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group2</span>
+                </div>
+            </a>
+
+            <!------------------------------------------------------------------------------------------------------------------------------->
+            
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group3</span>
+                </div>
+            </a>
+
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group3</span>
+                </div>
+            </a>
+
+            <a class="wholeArticle" href="https://youtu.be/eEjGgFKX_aU?si=VTNYLea1w91mt7vC">
+                <div class="Article">
+                    <img src="images/doodler.jpg" alt="placeholder" class="ArticleImage">
+                    <span>Group3</span>
+                </div>
+            </a>
+
+            <!------------------------------------------------------------------------------------------------------------------------------->
             
             <div>
                 <input onclick="ManualScroll()" type="radio" name="contentScroll" value="1" id = "radioStart">
