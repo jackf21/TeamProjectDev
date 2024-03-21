@@ -72,12 +72,11 @@
                     <span>Title</span>
                 </div>
             </a>
-
             
             <div>
-                <input type="radio" name="contentScroll" value="1" id = "radioStart">
-                <input type="radio" name="contentScroll" value="2">
-                <input type="radio" name="contentScroll" value="3">
+                <input onclick="ManualScroll()" type="radio" name="contentScroll" value="1" id = "radioStart">
+                <input onclick="ManualScroll()" type="radio" name="contentScroll" value="2">
+                <input onclick="ManualScroll()" type="radio" name="contentScroll" value="3">
             </div>
         </div>
     </div>
