@@ -7,60 +7,226 @@
     font-family: "Poppins", sans-serif;
 }
 
-#mainTitle {
-    font-size: 100px;
-    margin-top: 20px;
-}
-
-#mainLogo {
-    width: 100px;
-    height: 100px;
-    display: inline;
-}
-
 body {
     background-color: ghostwhite;
     margin: 0;
     padding: 0;
 }
 
-#banner {
-    background-color: #6E2594;
-    padding: 10px;
-    display: flex; /* Allows logo to appear on same line as banner */
-    align-items: center; 
+ul {
+    padding-left: 0;
 }
 
-a, ul {
+a {
     text-decoration: none;
     color: #3F84EF;
 }
 
-.bannerList:hover {
+#mainLogo {
+    width: 100px;
+    height: 100px;
+}
+
+#banner {
+    background-color: #6E2594;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bannerListItem:hover {
     background-color: rgb(138, 138, 141);
 }
 
-ul {
-    font-size: 25px;
-    list-style-type: none;
-    z-index: 3;
-    text-align: center;
-    transform: translate(100%,0%);
+.pageLink:hover {
+    text-decoration: underline;
 }
 
 .bannerList {
+    font-size: 25px;
+    z-index: 3;
+}
+
+h1{
+    text-align: center;
+    font-size: 75px;
+    margin: 40px;
+}
+.bannerListItem {
     padding: 10px;
-    margin: 20px;
+    margin: 40px;
     display: inline;
     border-radius: 15px;
     background-color: ghostwhite;
+    color: black;
+}
+
+#logSignButton {
+    margin: 0;
+    color: black;
+}
+
+.content {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #6E2594;
 }
 
 footer {
-    margin: 20px;
+    background-color: #6E2594;
+    padding: 50x;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
 }
 
-.center {
-    display: block;
-    text-align: center;
+.footerList {
+    background-color: none;
+    color: ghostwhite;
+    list-style: none;
+}
+
+#materials {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.materialsLists {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 60px;
+    width: 40vw;
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.materialsItem {
+    padding-right: 20px;
+    color: black;
+    font-size: 28px;
+}
+
+.materialsItem:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list {
+    border-style: solid;
+    padding: 20px;
+    padding-right: 0px;
+    background-color: #9E55c4;
+    margin-bottom: 7%;
+}
+
+.materialsLists::-webkit-scrollbar { 
+    width: 12px; 
+} 
+
+.materialsLists::-webkit-scrollbar-track { 
+    background: #9E55c4; 
+} 
+
+.materialsLists::-webkit-scrollbar-thumb { 
+    background: #7E35a4; 
+} 
+
+.materialsLists::-webkit-scrollbar-thumb:hover { 
+    background: #6E2594; 
+} 
+
+.materialsLists::-webkit-scrollbar-button { 
+    display: none; 
+}
+
+#faqSection {
+    margin-top: 33%;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+
+
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+/* COPY THIS OVER*/
+
+#contentContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    border-width: 0px;
+}
+
+#mainContentContainer {
+    display: flex;
+    width: 70%;
+    border-width: 0px;
+}
+
+#rightContent {
+    width: 30%;
+    border-width: 0px;
+}
+
+#contentContainer1 {
+    display: flex;
+    flex-flow: row nowrap;
+    border-width: 0px;
+}
+
+#mainContentContainer1 {
+    display: flex;
+    width: 30%;
+    border-width: 0px;
+
+}
+
+#rightContent1 {
+    width: 70%;
+    border-width: 0px;
+}
+
+#leftContent {
+    border-width: 0px;
+}
+
+#faqSection {
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+.faqItem{
+    margin-left: 10%;
+    padding: 13px;
+}
+
+#ans2{
+    margin-left: 2.5%;
+}
+h3{
+    padding-bottom: 12px;
 }

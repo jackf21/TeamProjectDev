@@ -147,3 +147,11 @@ footer {
     color: ghostwhite;
     list-style: none;
 }
+
+.wholeArticle {
+    display: none;
+}
+
+.show {
+    display: block;
+}
