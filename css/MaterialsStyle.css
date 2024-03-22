@@ -17,11 +17,6 @@ ul {
     padding-left: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #3F84EF;
-}
-
 #mainTitle {
     display: flex;
     font-size: 70px;
@@ -118,6 +113,7 @@ h1 {
     padding-right: 20px;
     color:black;
     font-size: 22px;
+    display:block;
 }
 
 .materialsItem:not(:last-child) {
@@ -150,9 +146,36 @@ h1 {
 .materialsLists::-webkit-scrollbar-button { 
     display: none; 
 } 
+
 input[type=checkbox] {
     accent-color: #6E2594;
     margin-right: 6px;
     height: 15px;
     width: 15px;
+}
+
+#filterLine {
+    border-style:solid;
+    padding: 20px;
+    margin-left:40px;
+    width: 450px;
+    background-color: #9E55c4;
+}
+
+.filter {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
 }
