@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyStudy - Register</title>
-    <link rel="stylesheet" href="LoginPageStyle.css">
+    <title>MyStudy - Login</title>
+    <link rel="stylesheet" href="./css/LoginPageStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header id="banner">
         <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/> 
         <ul class="bannerList">
-            <a href="MainPage.php"><li class="bannerListItem"><strong>Home</strong></li></a> 
-            <a href="StudyAdvicePage.php"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
-            <a href="MaterialsPage.php"><li class="bannerListItem"><strong>Materials</strong></li></a> 
+            <a href="index.html"><li class="bannerListItem"><strong>Home</strong></li></a> 
+            <a href="StudyAdvicePage.html"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
+            <a href="MaterialsPage.html"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
-            <a href="LoginPage.php"><button class="bannerListItem" id="logSignButton">Login</button></a>
+            <a href="LoginPage.html"><button class="bannerListItem" id="logSignButton">Login</button></a>
         </div>
     </header>
 
     <div class="container">
         <div class="wrapper">
             <form action="">
-                <h1>Sign Up</h1>
+                <h1>Login</h1>
                 <div class="input-box">
                     <input type="text" placeholder="Username" required>
                     <i class='bx bxs-user'></i>
@@ -32,19 +32,15 @@
                     <input type="password" placeholder="Password" required>
                     <i class='bx bxs-lock-alt' ></i>
                 </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Repeat password" required>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
 
                 <div class="remember-forgot">
                     <label><input type="checkbox"> Remember me</label>
                 </div>
 
-                <button type="submit" class="btn">Register now!</button>
+                <button type="submit" id="loginButton" class="btn">Login</button>
 
                 <div class="register-link">
-                    <p>Already have an account? <a href="LoginPage.php">Login</a></p>
+                    <p>Don't have an account? <a href="RegisterPage.html">Register</a></p>
                 </div>
             </form>
         </div>

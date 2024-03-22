@@ -1,0 +1,26 @@
+{
+  "name": "teamprojectdev",
+  "version": "1.0.0",
+  "description": "Website that will help students with study materials, advice, and more.",
+  "main": "DatabaseHandler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackf21/TeamProjectDev.git"
+  },
+  "keywords": [
+    "data"
+  ],
+  "author": "Jack, Noah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackf21/TeamProjectDev/issues"
+  },
+  "homepage": "https://github.com/jackf21/TeamProjectDev#readme",
+  "dependencies": {
+    "express": "^4.19.1",
+    "nedb": "^1.8.0"
+  }
+}
