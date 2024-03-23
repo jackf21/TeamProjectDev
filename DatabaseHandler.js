@@ -20,6 +20,17 @@ const database = new Datastore('includes/database.db');
 // load existing data into memory
 database.loadDatabase();
 
+//Database query, modifying the find({}) will return different data 
+app.get('/api',(request, response) => {
+    database.find({},(err,data) => {
+        if (err) {
+            response.end();
+            return;
+        }
+        response.json(data);
+    });
+});
+
 /* POST method route 
 Takes in address where the post is received
 As well as a callback function to look at information in and send response out
