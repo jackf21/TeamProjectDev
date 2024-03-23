@@ -1,16 +1,24 @@
 // CLIENT SIDE JS
 
 window.onload = () => {
-    getData();
     const button = document.getElementById("registerButton");
 
     button.addEventListener('click', async (event) => {
+        // prevent default event behaviour (refreshing page on submit)
+        event.preventDefault();
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
         const password2 = document.getElementById("password2").value;
 
         if (!checkUsername(username) || !checkPassword(password, password2)) {
             alert("Invalid username or password.\nYour username must be between 3 and 16 characters.\nYour password must contain at least an uppercase and lowercase letter, a number, and a special character.");
+            return;
+        }
+
+        const result = await getData();
+
+        if (!result) {
+            alert("Username already registered");
             return;
         }
 
@@ -30,6 +38,9 @@ window.onload = () => {
         const response = await fetch('/api', options);
         const json = await response.json();
         console.log(json);
+
+        // force reloads the window AFTER our functions have completed
+        window.location.reload();
     });
 }
 
@@ -52,8 +63,22 @@ const checkPassword = (pw, pw2) => {
     return true;
 }
 
+// Grabs all data from the database
 async function getData() {
     const response = await fetch('/api');
     const data = await response.json();
-    console.log(data);
+
+    console.log(checkData(data));
+    return checkData(data);
+}
+
+// For each piece of data, check whether the username is already registered
+// Returns false if entry has been found in database
+const checkData = (data) => {
+    for(const element of data) {
+        if (element.username === document.getElementById("username").value) {
+            return false;
+        }
+    }
+    return true;
 }

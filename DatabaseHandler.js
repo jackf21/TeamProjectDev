@@ -22,7 +22,7 @@ database.loadDatabase();
 
 //Database query, modifying the find({}) will return different data 
 app.get('/api',(request, response) => {
-    database.find({},(err,data) => {
+    database.find({}, (err,data) => {
         if (err) {
             response.end();
             return;
