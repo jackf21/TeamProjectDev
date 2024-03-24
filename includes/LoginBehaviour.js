@@ -5,26 +5,46 @@ window.onload = () => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        if (!checkUsername(username) || !checkPassword(password, password2)) {
-            alert("Invalid username or password.\nYour username must be between 3 and 16 characters.\nYour password must contain at least an uppercase and lowercase letter, a number, and a special character.");
+        if (!checkPassword(password)) {
+            alert("Invalid username or password.");
             return;
         }
 
-        const data = { username, password };
+        const result = await getData();
 
-        // needs to send a POST request to the server to add data there
-        const options = {
-            // defines the method that we use when querying
-            method: 'POST',
-            // defines the type of data being sent (JSON format)
-            headers: { 'Content-Type': 'application/json'},
-            // defines the data itself - string in JSON format
-            body: JSON.stringify(data)
-        };
-
-        // waits for the fetch to execute to receive a response from the server
-        const response = await fetch('/api', options);
-        const json = await response.json();
-        console.log(json);
+        if (result) {
+            alert("Welcome " + username);
+            console.log("Logged in successfully")
+            return;
+        }
     });
+}
+
+const checkPassword = (pw, pw2) => {
+    let regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,20}$/;
+
+    if (!regex.test(pw) || pw === null || pw2 === null) {
+        return false;
+    }
+    return true;
+}
+
+// Grabs all data from the database
+async function getData() {
+    const response = await fetch('/api');
+    const data = await response.json();
+
+    console.log(checkData(data));
+    return checkData(data);
+}
+
+// For each piece of data, check whether the username is already registered
+// Returns true if entry has been found in database
+const checkData = (data) => {
+    for(const element of data) {
+        if (element.username === document.getElementById("username").value && element.password === document.getElementById("password")) {
+            return true;
+        }
+    }
+    return false;
 }
