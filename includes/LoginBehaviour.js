@@ -5,6 +5,8 @@ window.onload = () => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
+        // Checks if password is valid using regex before checking the database for it
+        // This is to prevent unecessary database queries 
         if (!checkPassword(password)) {
             alert("Invalid username or password.");
             return;
@@ -20,6 +22,7 @@ window.onload = () => {
     });
 }
 
+// Password regex is the same as used in the register behaviour
 const checkPassword = (pw, pw2) => {
     let regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,20}$/;
 
