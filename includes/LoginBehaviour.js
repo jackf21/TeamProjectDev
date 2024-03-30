@@ -1,6 +1,9 @@
 window.onload = () => {
     const button = document.getElementById("loginButton");
 
+    // user stays logged in even after a refresh
+    updateUserInformation();
+
     button.addEventListener('click', async (event) => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
@@ -15,8 +18,43 @@ window.onload = () => {
         if (result) {
             alert("Welcome " + username);
             console.log("Logged in successfully")
-            return;
+
+            const data = { username, password };
+            const options = {
+                // defines the method that we use when querying
+                method: 'POST',
+                // defines the type of data being sent (JSON format)
+                headers: { 'Content-Type': 'application/json'},
+                // defines the data itself - string in JSON format
+                body: JSON.stringify(data)
+            };
+
+            const response = await fetch('/login', options);
+
+            updateUserInformation();
         }
+        else {
+            alert("Invalid username or password.");
+        }
+
+        // force reloads the window AFTER our functions have completed
+        window.location.reload();
+    });
+}
+
+// updates user information on the page, determines whether they are logged in or not
+const updateUserInformation = () => {
+    fetch('/user')
+    .then(response => response.json())
+    .then(data => {
+        if (data.loggedIn) {
+            document.getElementById('loggedInMessage').textContent = 'You are logged in as: ' + data.username;
+        } else {
+            document.getElementById('loggedInMessage').textContent = 'You are not logged in.';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
 }
 
@@ -42,7 +80,7 @@ async function getData() {
 // Returns true if entry has been found in database
 const checkData = (data) => {
     for(const element of data) {
-        if (element.username === document.getElementById("username").value && element.password === document.getElementById("password")) {
+        if (element.username === document.getElementById("username").value && element.password === document.getElementById("password").value) {
             return true;
         }
     }
