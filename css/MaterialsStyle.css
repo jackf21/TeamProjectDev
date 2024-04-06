@@ -43,6 +43,10 @@ ul {
     background-color: rgb(138, 138, 141);
 }
 
+.pageLink:visited {
+    color: #3F84EF;
+}
+
 .pageLink:hover {
     text-decoration: underline;
 }
