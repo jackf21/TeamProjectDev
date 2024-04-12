@@ -217,7 +217,7 @@ h3{
     height: 350px;
     margin-right: 20px;
     perspective: 1000px;
-    position: relative; 
+    position: relative; /* Ensure the container is positioned */
   }
   
   .flip-card-inner {
@@ -251,7 +251,7 @@ h3{
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-    font-size: 18px; 
+    font-size: 18px; /* Adjust font size for the back face */
   }
   
   .image-overlay {
@@ -259,10 +259,10 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
     padding: 2px;
-    font-size: 30px; 
+    font-size: 30px; /* Adjust font size for the overlay text */
   }
   
   .image-overlay1 {
@@ -270,14 +270,14 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
     padding: 2px;
-    font-size: 20px;
+    font-size: 20px; /* Adjust font size for the overlay text */
   }
   
   .card-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around; /* Spread out the flip cards evenly */
   }
   
