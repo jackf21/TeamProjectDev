@@ -2,19 +2,19 @@ window.onload = () => {
     filterMaterials()
 }
 
-function filterMaterials() {
+const filterMaterials = () => {
     filterSubject(document.getElementById("subject").value)
     filterStatus(document.getElementById("status").value)
 }
 
-function filterSubject(subject) {
-    var allElements;
+const filterSubject = (subject) => {
+    let allElements;
     allElements = document.getElementsByClassName("filter");
     if (subject == "any") {
         subject = "";
     }
     
-    for (var i = 0; i < allElements.length; i++) {
+    for (let i = 0; i < allElements.length; i++) {
         RemoveItem(allElements[i]);
         if (allElements[i].className.indexOf(subject) > -1) {
             AddItem(allElements[i])
@@ -22,11 +22,11 @@ function filterSubject(subject) {
     }
 }
 
-function filterStatus(status) {
-    var allElements
+const filterStatus = (status) => {
+    let allElements
     allElements = document.getElementsByClassName("checkbox");
     allStatus = document.getElementsByClassName("status");
-    for (var i = 0; i < allElements.length; i++) {
+    for (let i = 0; i < allElements.length; i++) {
         if (allElements[i].className.indexOf("show") > -1) {
             RemoveItem(allElements[i])
             if (status == "any") {
@@ -42,8 +42,8 @@ function filterStatus(status) {
     }
 }
 
-function AddItem(element) {
-    var elementClasses;
+const AddItem = (element) => {
+    let elementClasses;
     elementClasses = element.className.split(" ");
     if (elementClasses.indexOf("show" == -1)) {
         element.className += " show";
@@ -51,11 +51,20 @@ function AddItem(element) {
     
 }
 
-function RemoveItem (element) {
-    var elementClasses;
+const RemoveItem = (element) => {
+    let elementClasses;
     elementClasses = element.className.split(" ");
     while (elementClasses.indexOf("show") > -1) {
         elementClasses.splice(elementClasses.indexOf("show"), 1)
     }
-    element.className = elementClasses.join(" ")
+    element.className = elementClasses.join(" ");
+}
+
+const SaveProgress = () => {
+    let aiProgress = document.getElementById("AIs").getElementsByTagName("li");
+    let booksProgress = document.getElementById("Books").getElementsByTagName("li");
+    let websitesProgress = document.getElementById("Websites").getElementsByTagName("li");
+    let youTubeProgress = document.getElementById("YouTube").getElementsByTagName("li");
+
+    let username = document.getElementById("loggedInMessage")
 }
