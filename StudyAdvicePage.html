@@ -8,13 +8,17 @@
 </head>
 <body>
     <header id="banner">
-        <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/>
+        <div>
+            <img src="images/logo.png" alt="MyStudy Logo" id="mainLogo"/>
+            <span id="invisibleElement"></span>
+        </div>
         <ul class="bannerList">
             <a href="index.html"><li class="bannerListItem"><strong>Home</strong></li></a> 
             <a href="StudyAdvicePage.html"><li class="bannerListItem"><strong>Study Advice</strong></li></a> 
             <a href="MaterialsPage.html"><li class="bannerListItem"><strong>Materials</strong></li></a> 
         </ul>
         <div>
+            <span id="loggedInMessage">You are not logged in.</span>
             <a href="LoginPage.html"><button class="bannerListItem" id="logSignButton">Login</button></a>
         </div>
     </header>

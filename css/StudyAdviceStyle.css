@@ -62,6 +62,21 @@ h1{
     color: black;
 }
 
+/* identical elements to balance out the middle banner list items*/
+
+#loggedInMessage {
+    display: inline-block;
+    margin-right: 10px;
+    width: 10vw;
+}
+
+#invisibleElement {
+    display: inline-block;
+    margin-left: 10px;
+    width: 10vw;
+    visibility: hidden;
+}
+
 #logSignButton {
     margin: 0;
     color: black;
