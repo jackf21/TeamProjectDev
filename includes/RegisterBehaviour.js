@@ -9,6 +9,11 @@ window.onload = () => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
         const password2 = document.getElementById("password2").value;
+        //boolean array for checkbox statuses
+        const savedAIProgress = [3];
+        const savedBooksProgress = [11];
+        const savedWebsitesProgress = [5];
+        const savedYouTubeProgress = [5];
 
         if (!checkUsername(username) || !checkPassword(password, password2)) {
             alert("Invalid username or password.\nYour username must be between 3 and 16 characters.\nYour password must contain at least an uppercase and lowercase letter, a number, and a special character.");
@@ -38,7 +43,7 @@ window.onload = () => {
             const response = await fetch('/login', options);
         }
 
-        const data = { username, password };
+        const data = { username, password, savedAIProgress, savedBooksProgress, savedWebsitesProgress, savedYouTubeProgress };
 
         // needs to send a POST request to the server to add data there
         const options = {
