@@ -17,6 +17,11 @@ ul {
     padding-left: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #3F84EF;
+}
+
 #mainTitle {
     display: flex;
     font-size: 70px;
@@ -41,10 +46,6 @@ ul {
 
 .bannerListItem:hover {
     background-color: rgb(138, 138, 141);
-}
-
-.pageLink:visited {
-    color: #3F84EF;
 }
 
 .pageLink:hover {
@@ -189,12 +190,12 @@ input[type=checkbox] {
     display: block;
 }
 
-a {
+.materialsLists a {
     text-decoration: none;
     padding-right: 20px;
 }
 
-a:hover {
+.materialsLists a:hover {
     text-decoration: underline;
     text-decoration-color: black;
 }
