@@ -1,9 +1,6 @@
 window.onload = () => {
     const button = document.getElementById("loginButton");
 
-    // user stays logged in even after a refresh
-    updateUserInformation();
-
     button.addEventListener('click', async (event) => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
@@ -32,31 +29,14 @@ window.onload = () => {
             };
 
             const response = await fetch('/login', options);
-
-            updateUserInformation();
         }
         else {
             alert("Invalid username or password.");
         }
 
         // force reloads the window AFTER our functions have completed
+        // recalls the login function from UpdateUserInformation
         window.location.reload();
-    });
-}
-
-// updates user information on the page, determines whether they are logged in or not
-const updateUserInformation = () => {
-    fetch('/user')
-    .then(response => response.json())
-    .then(data => {
-        if (data.loggedIn) {
-            document.getElementById('loggedInMessage').textContent = 'You are logged in as: ' + data.username;
-        } else {
-            document.getElementById('loggedInMessage').textContent = 'You are not logged in.';
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
     });
 }
 

@@ -1,5 +1,5 @@
 // attempt to login user if theyre logged in within the session
-window.onload = () => {
+window.addEventListener('load', () => {
     fetch('/user')
     .then(response => response.json())
     .then(data => {
@@ -12,4 +12,6 @@ window.onload = () => {
     .catch(error => {
         console.error('Error:', error);
     });
-}
+});
+
+// add an event listener to the window.onload instead of using the function directly as it would overwrite other functions that use it
