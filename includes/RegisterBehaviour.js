@@ -24,22 +24,6 @@ window.onload = () => {
             alert("Username already registered");
             return;
         }
-        else {
-            alert("Welcome " + username);
-            console.log("Logged in successfully")
-
-            const data = { username, password };
-            const options = {
-                // defines the method that we use when querying
-                method: 'POST',
-                // defines the type of data being sent (JSON format)
-                headers: { 'Content-Type': 'application/json'},
-                // defines the data itself - string in JSON format
-                body: JSON.stringify(data)
-            };
-
-            const response = await fetch('/login', options);
-        }
 
         const data = { username, password, savedBooksProgress, savedYouTubeProgress };
 
@@ -57,6 +41,23 @@ window.onload = () => {
         const response = await fetch('/api', options);
         const json = await response.json();
         console.log(json);
+
+        if (result) {
+            alert("Welcome " + username);
+            console.log("Logged in successfully")
+
+            const data = { username, password };
+            const options = {
+                // defines the method that we use when querying
+                method: 'POST',
+                // defines the type of data being sent (JSON format)
+                headers: { 'Content-Type': 'application/json'},
+                // defines the data itself - string in JSON format
+                body: JSON.stringify(data)
+            };
+
+            const response = await fetch('/login', options);
+        }
 
         // force reloads the window AFTER our functions have completed
         window.location.reload();

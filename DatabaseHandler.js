@@ -38,7 +38,7 @@ app.get('/user', (request, response) => {
             loggedIn: true, 
             username: request.session.user.username, 
             savedBooksProgress: request.session.user.savedBooksProgress, 
-            savedYouTubeProgress: request.session.user.savedYoutubeProgress 
+            savedYouTubeProgress: request.session.user.savedYouTubeProgress 
         });
     } else {
         response.json({ loggedIn: false });
@@ -47,17 +47,22 @@ app.get('/user', (request, response) => {
 
 // Login route
 app.post('/login', (request, response) => {
-    // authenticates user
-    if (database.find({ username: request.body.username })) {
-        request.session.user = { // save user and information within the session
-            username: request.body.username,
-            savedBooksProgress: database.find({username: request.body.username}).savedBooksProgress,
-            savedYouTubeProgress: database.find({username: request.body.username}).savedYoutubeProgress
+    database.findOne({ username: request.body.username }, (err, user) => {
+        if (err) {
+            console.error("Error:", err);
+            return response.status(500).json({ error: 'Error occurred during login' });
         }
-        response.json({ success: true, message: 'Logged in successfully' });
-    } else {
-        response.status(401).json({ error: 'Invalid username or password' });
-    }
+        if (user) {
+            request.session.user = { // save user and information within the session
+                username: user.username,
+                savedBooksProgress: user.savedBooksProgress,
+                savedYouTubeProgress: user.savedYouTubeProgress
+            }
+            response.json({ success: true, message: 'Logged in successfully' });
+        } else {
+            response.status(401).json({ error: 'Invalid username or password' });
+        }
+    });
 });
 
 app.post('')
@@ -92,14 +97,28 @@ app.post('/api', (request, response) => {
     });
 });
 
-app.patch('/api', (request,response) => {
+app.patch('/api', (request, response) => {
     console.log("Data updated");
     database.update(
-        {username: request.body.username}, 
+        { username: request.body.username },
         {
-            savedBooksProgress: request.body.savedBooksProgress, 
-            savedYouTubeProgress: request.body.savedYouTubeProgress
+            $set: {
+                savedBooksProgress: request.body.savedBooksProgress,
+                savedYouTubeProgress: request.body.savedYouTubeProgress
+            }
         },
-        {}
-    )
-})
+        {},
+        (err, numReplaced) => {
+            if (err) {
+                console.error(err);
+                response.status(500).json({ error: "Error updating data" });
+            } else {
+                console.log(`Updated ${numReplaced} document(s)`);
+                response.status(200).json({ message: "Data updated successfully" });
+            }
+        }
+    );
+
+    // removes duplicate values in DB (update alone appends and doesnt remove)
+    database.persistence.compactDatafile();
+});

@@ -17,15 +17,18 @@ async function LoadProgress() {
         if (data.loggedIn) {
 
             console.log("Username: " + data.username);
-            console.log("Obj: " + data.savedBooksProgress);
-            console.log("Single obj: " + data.savedBooksProgress[0]);
+            console.log("books Obj: " + data.savedBooksProgress);
+            console.log("books Single obj: " + data.savedBooksProgress[0]);
+
+            console.log("youtube Obj: " + data.savedYouTubeProgress);
+            console.log("youtube Single obj: " + data.savedYouTubeProgress[0]);
 
             for(let i = 0; i < data.savedBooksProgress.length; i++){
-                document.getElementById("Books").getElementsByTagName("li")[i].checked = data.savedBooksProgress[i];
+                document.getElementById("Books").getElementsByTagName("li")[i].getElementsByClassName("status")[0].checked = data.savedBooksProgress[i];
             }
 
             for(let i = 0; i < data.savedYouTubeProgress.length; i++){
-                document.getElementById("YouTube").getElementsByTagName("li")[i].checked = data.savedYouTubeProgress[i];
+                document.getElementById("YouTube").getElementsByTagName("li")[i].getElementsByClassName("status")[0].checked = data.savedYouTubeProgress[i];
             }
         }
         else {
@@ -46,8 +49,11 @@ async function LoadProgress() {
 
 //Saving user selection of checkboxes
 async function SaveProgress() {
-    let savedBooksProgress = document.getElementById("Books").getElementsByTagName("li");
-    let savedYouTubeProgress = document.getElementById("YouTube").getElementsByTagName("li");
+    const savedBooksProgressObj = document.getElementById("Books").getElementsByTagName("input");
+    const savedYouTubeProgressObj = document.getElementById("YouTube").getElementsByTagName("input");
+
+    const savedBooksProgress = Array.from(savedBooksProgressObj).map(input => input.checked);
+    const savedYouTubeProgress = Array.from(savedYouTubeProgressObj).map(input => input.checked);
 
     let username;
 
@@ -75,8 +81,21 @@ async function SaveProgress() {
         body: JSON.stringify(data)
     };
 
-    // waits for the fetch to execute to receive a response from the server
-    const response = await fetch('/api', options);
-    const json = await response.json();
-    console.log(json);
+    // waits for the fetch to execute to receive a response from the server;
+    await fetch('/api', options)
+    .then(response => response.json())
+    .catch((err) => console.log(err));
+
+    // simulates a login again to refresh session variables
+    const logindata = { username, savedBooksProgress, savedYouTubeProgress };
+    const loginoptions = {
+        // defines the method that we use when querying
+        method: 'POST',
+        // defines the type of data being sent (JSON format)
+        headers: { 'Content-Type': 'application/json'},
+        // defines the data itself - string in JSON format
+        body: JSON.stringify(logindata)
+    };
+
+    const response = await fetch('/login', loginoptions);
 }
