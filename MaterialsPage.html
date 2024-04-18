@@ -29,23 +29,27 @@
 
     <h id=mainTitle>Materials</h>
 
-    <div id="filterLine">
-        <label for="filters">Subjects:</label>
-        <select onchange="filterMaterials()" name="filters" id="subject">
-            <option value="any">Any</option>
-            <option value="database">Database</option>
-            <option value="maths">Mathematics</option>
-            <option value="programming">Programming</option>
-            <option value="webDev">Web Development</option>
-            <option value="groupProject">Group Project</option>
-        </select>
-
-        <label for="completed">Status:</label>
-        <select onchange="filterMaterials()" name="filters" id="status">
-            <option value="any">Any</option>
-            <option value="finished">Finished</option>
-            <option value="unfinished">Unfinished</option>
-        </select>
+    <div id="materialFunctions">
+        <div id="filterLine">
+            <label for="filters">Subjects:</label>
+            <select onchange="filterMaterials()" name="filters" id="subject">
+                <option value="any">Any</option>
+                <option value="database">Database</option>
+                <option value="maths">Mathematics</option>
+                <option value="programming">Programming</option>
+                <option value="webDev">Web Development</option>
+                <option value="groupProject">Group Project</option>
+            </select>
+    
+            <label for="completed">Status:</label>
+            <select onchange="filterMaterials()" name="filters" id="status">
+                <option value="any">Any</option>
+                <option value="finished">Finished</option>
+                <option value="unfinished">Unfinished</option>
+            </select>
+        </div>
+        
+        <button id="saveProgress" type="button">Save Progress</button>
     </div>
 
     <div id="materials">

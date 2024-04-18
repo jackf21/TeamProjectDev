@@ -60,11 +60,3 @@ const RemoveItem = (element) => {
     element.className = elementClasses.join(" ");
 }
 
-const SaveProgress = () => {
-    let aiProgress = document.getElementById("AIs").getElementsByTagName("li");
-    let booksProgress = document.getElementById("Books").getElementsByTagName("li");
-    let websitesProgress = document.getElementById("Websites").getElementsByTagName("li");
-    let youTubeProgress = document.getElementById("YouTube").getElementsByTagName("li");
-
-    let username = document.getElementById("loggedInMessage")
-}

@@ -80,3 +80,17 @@ app.post('/api', (request, response) => {
         password: request.body.password
     });
 });
+
+app.patch('/api', (request,response) => {
+    console.log("Data updated");
+    database.update(
+        {username: request.body.username}, 
+        {
+            savedAIProgress: request.body.savedAIProgress, 
+            savedBooksProgress: request.body.savedBooksProgress, 
+            savedWebsitesProgress: request.body.savedWebsitesProgress,
+            savedYouTubeProgress: request.body.savedYouTubeProgress
+        },
+        {}
+    )
+})

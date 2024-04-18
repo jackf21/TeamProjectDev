@@ -199,3 +199,13 @@ input[type=checkbox] {
     text-decoration: underline;
     text-decoration-color: black;
 }
+
+#saveProgress {
+    margin: 20px;
+}
+
+#materialsFunction {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}

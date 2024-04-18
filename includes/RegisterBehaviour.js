@@ -10,10 +10,10 @@ window.onload = () => {
         const password = document.getElementById("password").value;
         const password2 = document.getElementById("password2").value;
         //boolean array for checkbox statuses
-        const savedAIProgress = [3];
-        const savedBooksProgress = [11];
-        const savedWebsitesProgress = [5];
-        const savedYouTubeProgress = [5];
+        const savedAIProgress = [];
+        const savedBooksProgress = [];
+        const savedWebsitesProgress = [];
+        const savedYouTubeProgress = [];
 
         if (!checkUsername(username) || !checkPassword(password, password2)) {
             alert("Invalid username or password.\nYour username must be between 3 and 16 characters.\nYour password must contain at least an uppercase and lowercase letter, a number, and a special character.");
