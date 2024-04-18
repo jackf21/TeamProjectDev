@@ -34,7 +34,12 @@ database.loadDatabase();
 // endpoint to get user information
 app.get('/user', (request, response) => {
     if (request.session.user) {
-        response.json({ loggedIn: true, username: request.session.user.username });
+        response.json({
+            loggedIn: true, 
+            username: request.session.user.username, 
+            savedBooksProgress: request.session.user.savedBooksProgress, 
+            savedYouTubeProgress: request.session.user.savedYoutubeProgress 
+        });
     } else {
         response.json({ loggedIn: false });
     }
@@ -42,14 +47,20 @@ app.get('/user', (request, response) => {
 
 // Login route
 app.post('/login', (request, response) => {
-    // check username and password of the user
+    // authenticates user
     if (database.find({ username: request.body.username })) {
-        request.session.user = {username: request.body.username }; // save the user in the session
+        request.session.user = { // save user and information within the session
+            username: request.body.username,
+            savedBooksProgress: database.find({username: request.body.username}).savedBooksProgress,
+            savedYouTubeProgress: database.find({username: request.body.username}).savedYoutubeProgress
+        }
         response.json({ success: true, message: 'Logged in successfully' });
     } else {
         response.status(401).json({ error: 'Invalid username or password' });
     }
 });
+
+app.post('')
 
 //Database query, modifying the find({}) will return different data 
 app.get('/api',(request, response) => {
@@ -86,9 +97,7 @@ app.patch('/api', (request,response) => {
     database.update(
         {username: request.body.username}, 
         {
-            savedAIProgress: request.body.savedAIProgress, 
             savedBooksProgress: request.body.savedBooksProgress, 
-            savedWebsitesProgress: request.body.savedWebsitesProgress,
             savedYouTubeProgress: request.body.savedYouTubeProgress
         },
         {}

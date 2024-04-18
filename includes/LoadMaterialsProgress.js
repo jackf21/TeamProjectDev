@@ -10,48 +10,48 @@ window.addEventListener('load', () => {
 })
 
 async function LoadProgress() {
-    let savedAIProgress = document.getElementById("AIs").getElementsByTagName("li");
-    let savedBooksProgress = document.getElementById("Books").getElementsByTagName("li");
-    let savedWebsitesProgress = document.getElementById("Websites").getElementsByTagName("li");
-    let savedYouTubeProgress = document.getElementById("YouTube").getElementsByTagName("li");
-
+    
     await fetch('/user')
     .then(response => response.json())
     .then(data => {
         if (data.loggedIn) {
-            for(let i = 0; i < savedAIProgress.length; i++){
-                savedAIProgress[i] = data.savedAIProgress[i];
+
+            console.log("Username: " + data.username);
+            console.log("Obj: " + data.savedBooksProgress);
+            console.log("Single obj: " + data.savedBooksProgress[0]);
+
+            for(let i = 0; i < data.savedBooksProgress.length; i++){
+                document.getElementById("Books").getElementsByTagName("li")[i].checked = data.savedBooksProgress[i];
             }
 
-            for(let i = 0; i < savedBooksProgress.length; i++){
-                savedBooksProgress[i] = data.savedBooksProgress[i];
-            }
-
-            for(let i = 0; i < savedWebsitesProgress.length; i++){
-                savedWebsitesProgress[i] = data.savedWebsitesProgress[i];
-            }
-            for(let i = 0; i < savedYouTubeProgress.length; i++){
-                savedYouTubeProgress[i] = data.savedYouTubeProgress[i];
+            for(let i = 0; i < data.savedYouTubeProgress.length; i++){
+                document.getElementById("YouTube").getElementsByTagName("li")[i].checked = data.savedYouTubeProgress[i];
             }
         }
+        else {
+            console.log("Not logged in");
+            return;
+        }
+        
     })
     .catch((err) => {
         console.log(err);
     })
+
+    await fetch('/api')
+    
 
     console.log("Progress loaded");
 }
 
 //Saving user selection of checkboxes
 async function SaveProgress() {
-    let savedAIProgress = document.getElementById("AIs").getElementsByTagName("li");
     let savedBooksProgress = document.getElementById("Books").getElementsByTagName("li");
-    let savedWebsitesProgress = document.getElementById("Websites").getElementsByTagName("li");
     let savedYouTubeProgress = document.getElementById("YouTube").getElementsByTagName("li");
 
     let username;
 
-    fetch('/user')
+    await fetch('/user')
     .then(response => response.json())
     .then(data => {
         if (data.loggedIn) {
@@ -63,7 +63,7 @@ async function SaveProgress() {
         }
     })
 
-    const data = { username, savedAIProgress, savedBooksProgress, savedWebsitesProgress, savedYouTubeProgress };
+    const data = { username, savedBooksProgress, savedYouTubeProgress };
 
     // needs to send a POST request to the server to add data there
     const options = {
