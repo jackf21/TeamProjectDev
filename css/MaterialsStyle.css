@@ -180,6 +180,7 @@ input[type=checkbox] {
     margin-left:40px;
     width: 450px;
     background-color: #9E55c4;
+    display: inline-block;
 }
 
 .filter {
@@ -201,11 +202,7 @@ input[type=checkbox] {
 }
 
 #saveProgress {
-    margin: 20px;
-}
-
-#materialsFunction {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #9E55c4;
 }
